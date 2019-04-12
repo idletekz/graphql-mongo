@@ -1,0 +1,24 @@
+type Query {
+  posts: [Post!]!
+  users(name: String): [User!]!
+}
+
+type Mutation {
+  createPost(title: String!, desc: String!, author: String!): Boolean!
+  createUser(id: String!, name: String!, email: String!): Boolean!
+}
+
+# Schema Types
+type Post {
+  id: String!
+  title: String!
+  desc: String!
+  author: String!
+  createdOn: String!
+}
+
+type User {
+	id: String!
+	name: String!
+	email: String!
+}

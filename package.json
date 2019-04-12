@@ -1,0 +1,25 @@
+{
+  "name": "yoga-mongodb",
+  "version": "0.0.1",
+  "description": "GraphQL-YOGA with mongodb",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "npm run test",
+    "start": "nodemon --exec babel-node src/index.js",
+    "build": "SET NODE_ENV=PRODUCTION && babel src -d dist --copy-files",
+    "serve": "node dist/index.js"
+  },
+  "author": "Alex",
+  "license": "MIT",
+  "dependencies": {
+    "graphql-yoga": "^1.17.4",
+    "mongoose": "^5.5.1"
+  },
+  "devDependencies": {
+    "babel": "^6.23.0",
+    "babel-cli": "^6.26.0",
+    "babel-plugin-transform-runtime": "^6.23.0",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-stage-2": "^6.24.1"
+  }
+}
